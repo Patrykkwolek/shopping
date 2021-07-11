@@ -3,8 +3,7 @@ import './viewLogo.scss';
 
 function ViewLogo() {
     return (
-        <div className="view-logo">
-        </div>
+        <div className="view-logo" />
     );
 }
 

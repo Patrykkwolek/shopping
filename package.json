@@ -23,10 +23,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --config ./.eslintrc.js '*/**/*.{js,ts,tsx}'",
+    "lint:fix": "eslint --config ./.eslintrc.js '*/**/*.{js,ts,tsx}' --fix"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "@imaginary-cloud/react"
   },
   "browserslist": {
     "production": [
@@ -43,7 +45,14 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
-    "eslint-config-airbnb-typescript": "^12.3.1",
-    "eslint-plugin-jest": "^24.3.6"
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^4.9.0",
+    "prettier": "^2.3.2"
   }
 }
