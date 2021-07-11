@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import WelcomeBox from "./modules/welcomeBox/welcomeBox";
 
 function App() {
   return (
-    <div className="App">
-      "Test"
+    <div className="page-container">
+      <WelcomeBox />
     </div>
   );
 }
