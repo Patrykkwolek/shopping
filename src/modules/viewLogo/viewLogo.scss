@@ -1,0 +1,18 @@
+@import '../../shared/main';
+
+.view-logo {
+	height: 93px;
+	width: 93px;
+	background-color: #fff;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+	line-height: 93px;
+
+	@include flex-center;
+
+	.logo-icon {
+		@include flex-center;
+	}
+}

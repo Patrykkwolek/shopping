@@ -5,6 +5,7 @@
 	width: 100%;
 
 	$--page-background-color: #309f5f;
+	$--font-main-color: #fff;
 
 	.page-container {
 		position: fixed;
@@ -14,6 +15,7 @@
 		width: 100%;
 		z-index: 9999;
 		background-color: $--page-background-color;
+		color: $--font-main-color;
 
 		.page-content {
 			display: flex;
