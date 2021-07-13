@@ -1,10 +1,8 @@
-import React from 'react';
-import './viewLogo.scss';
+import React from 'react'
+import './viewLogo.scss'
 
 function ViewLogo() {
-    return (
-        <div className="view-logo" />
-    );
+	return <div className='view-logo' />
 }
 
-export default ViewLogo;
+export default ViewLogo

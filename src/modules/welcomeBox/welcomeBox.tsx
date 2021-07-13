@@ -1,13 +1,13 @@
-import React from 'react';
-import './welcomeBox.scss';
-import ViewLogo from "../viewLogo/viewLogo";
+import React from 'react'
+import './welcomeBox.scss'
+import ViewLogo from '../viewLogo/viewLogo'
 
 function WelcomeBox() {
-    return (
-        <div className="welcome-box">
-            <ViewLogo />
-            </div>
-    );
+	return (
+		<div className='welcome-box'>
+			<ViewLogo />
+		</div>
+	)
 }
 
-export default WelcomeBox;
+export default WelcomeBox

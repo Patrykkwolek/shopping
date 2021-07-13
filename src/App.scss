@@ -1,26 +1,26 @@
 .root {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-  width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+	width: 100%;
 
-  $--page-background-color: #309f5f;
+	$--page-background-color: #309f5f;
 
-  .page-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 9999;
-    background-color: $--page-background-color;
+	.page-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 9999;
+		background-color: $--page-background-color;
 
-    .page-content {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 180px;
-      padding-top: 50px;
-      text-align: center;
-    }
-  }
+		.page-content {
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 180px;
+			padding-top: 50px;
+			text-align: center;
+		}
+	}
 }
