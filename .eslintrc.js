@@ -38,4 +38,15 @@ module.exports = {
       }
     }
   },
+  overrides: [
+    {
+      files: [
+        '**/*.spec.ts',
+        '**/*.spec.tsx'
+      ],
+      env: {
+        'jest': true
+      }
+    }
+  ]
 };
