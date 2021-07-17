@@ -6,7 +6,7 @@ function ViewLogo() {
 	return (
 		<div className='view-logo'>
 			<div className='logo-icon'>
-				<img height={93} width={93} src={Logo} alt='' />
+				<img src={Logo} alt='' />
 			</div>
 		</div>
 	)

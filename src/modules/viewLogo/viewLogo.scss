@@ -1,18 +1,27 @@
 @import '../../shared/main';
 
+$--logo-size: 100px;
+$--logo-background-size: 93px;
+
 .view-logo {
-	height: 93px;
-	width: 93px;
+	height: $--logo-background-size;
+	width: $--logo-background-size;
 	background-color: #fff;
 	border-radius: 20px;
 	text-align: center;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 	position: relative;
-	line-height: 93px;
+	line-height: $--logo-background-size;
 
 	@include flex-center;
 
 	.logo-icon {
 		@include flex-center;
+
+		img {
+			height: $--logo-size;
+			width: $--logo-size;
+			padding-left: 4px;
+		}
 	}
 }
