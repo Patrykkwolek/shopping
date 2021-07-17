@@ -9,7 +9,7 @@ function WelcomeBox() {
 		<div className='welcome-box'>
 			<ViewLogo />
 			<img src={Title} alt='' className='logo-title' />
-			<p className='logo-text'>{getTranslation('logoText')}</p>
+			<span className='logo-description'>{getTranslation('logoText')}</span>
 		</div>
 	)
 }
