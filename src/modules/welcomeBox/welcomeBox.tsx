@@ -1,14 +1,14 @@
 import React from 'react'
 import './welcomeBox.scss'
 import ViewLogo from '../viewLogo/viewLogo'
-import LogoImg from '../../resources/img/text-logo.png'
+import Title from '../../resources/img/title.svg'
 import getTranslation from '../../translations'
 
 function WelcomeBox() {
 	return (
 		<div className='welcome-box'>
 			<ViewLogo />
-			<img className='logo-name' src={LogoImg} alt='' />
+			<img src={Title} alt='' className='logo-title' />
 			<p className='logo-text'>{getTranslation('logoText')}</p>
 		</div>
 	)
