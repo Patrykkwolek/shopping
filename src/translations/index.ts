@@ -12,12 +12,12 @@ const translations: TranslationRecords = Object.freeze({
 		pl: 'Dostawy Zdrowego Jedzenia',
 	},
 	sliderText: {
-		eng: 'Food products, For',
-		pl: '',
+		eng: 'Groceries, for',
+		pl: 'Artykuły spożywcze,',
 	},
 	sliderText2nd: {
 		eng: 'every occasion',
-		pl: '',
+		pl: 'na każdą okazję',
 	},
 })
 
