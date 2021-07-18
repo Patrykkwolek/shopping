@@ -11,6 +11,14 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'Healhty Food Delivery',
 		pl: 'Dostawy Zdrowego Jedzenia',
 	},
+	sliderText: {
+		eng: 'Food products, For',
+		pl: '',
+	},
+	sliderText2nd: {
+		eng: 'every occasion',
+		pl: '',
+	},
 })
 
 const getTranslation = (translation: string): string => {
