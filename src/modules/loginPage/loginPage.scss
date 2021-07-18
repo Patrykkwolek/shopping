@@ -1,0 +1,17 @@
+.welcome-box {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 180px;
+	padding-top: 50px;
+	text-align: center;
+	align-items: center;
+
+	.logo-title {
+		margin: -2.7rem 0;
+		height: 10rem;
+		width: 10rem;
+	}
+	.logo-description {
+		font-size: 14px;
+	}
+}

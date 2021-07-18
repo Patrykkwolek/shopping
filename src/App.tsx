@@ -1,14 +1,17 @@
 import React from 'react'
 import './App.scss'
-import WelcomeBox from './components/welcomeBox/welcomeBox'
-import Slider from './components/slider/slider'
+import LoginPage from './modules/loginPage/loginPage'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
 	return (
-		<div className='page-container'>
-			<WelcomeBox />
-			<Slider />
-		</div>
+		<Router>
+			<Switch>
+				<Route path='/'>
+					<LoginPage />
+				</Route>
+			</Switch>
+		</Router>
 	)
 }
 
