@@ -10,7 +10,9 @@
 	margin: 0 18px 18px 18px;
 	border-width: 0;
 
+	background-color: $--login-button-color;
+
 	&--primary {
-		background-color: $--login-button-color;
+		background-color: $--login-button-primary-color;
 	}
 }

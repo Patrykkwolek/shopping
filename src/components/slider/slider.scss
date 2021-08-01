@@ -12,5 +12,6 @@
 
 	.slider-content {
 		@include flex-center-horizontal;
+		color: $--font-main-color;
 	}
 }
