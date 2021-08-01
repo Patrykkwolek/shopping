@@ -1,5 +1,5 @@
-@import '../../shared/main';
-@import '../../shared/utils';
+@import '../../../shared/main';
+@import '../../../shared/utils';
 
 $--logo-size: 100px;
 $--logo-background-size: 93px;
@@ -14,10 +14,12 @@ $--logo-background-size: 93px;
 	position: relative;
 	line-height: $--logo-background-size;
 
-	@include flex-center;
+	@include flex-center-vertical;
+	@include flex-center-horizontal;
 
 	.logo-icon {
-		@include flex-center;
+		@include flex-center-vertical;
+		@include flex-center-horizontal;
 
 		img {
 			height: $--logo-size;

@@ -1,0 +1,16 @@
+@import '../../shared/main';
+@import '../../shared/utils';
+
+.toolbar {
+	max-width: $--max-page-width;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	flex: 0 0;
+
+	&__button-group {
+		display: flex;
+		flex-direction: column;
+		flex: 1 0;
+	}
+}

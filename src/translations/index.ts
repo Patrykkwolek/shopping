@@ -21,6 +21,14 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'every occasion',
 		pl: 'na każdą okazję',
 	},
+	signUp: {
+		eng: 'SIGN UP',
+		pl: 'UTWÓRZ NOWE KONTO',
+	},
+	login: {
+		eng: 'LOGIN',
+		pl: 'ZALOGUJ SIĘ',
+	},
 })
 
 const getTranslation = (translation: string): string => {

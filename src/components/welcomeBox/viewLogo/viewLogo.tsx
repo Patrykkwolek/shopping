@@ -1,6 +1,6 @@
 import React from 'react'
 import './viewLogo.scss'
-import Logo from '../../resources/img/logo.svg'
+import Logo from '../../../resources/img/logo.svg'
 
 function ViewLogo() {
 	return (

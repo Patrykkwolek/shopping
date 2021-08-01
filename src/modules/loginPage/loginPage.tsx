@@ -2,16 +2,14 @@ import React from 'react'
 import './loginPage.scss'
 import WelcomeBox from '../../components/welcomeBox/welcomeBox'
 import Slider from '../../components/slider/slider'
-import LoginButton from '../../components/loginButton/loginButton'
-import getTranslation from '../../translations'
+import Toolbar from '../../components/toolbar/toolbar'
 
 function LoginPage() {
 	return (
-		<div className='page-container'>
+		<div className='login-page'>
 			<WelcomeBox />
 			<Slider />
-			<LoginButton key={0} text={getTranslation('signUp')} onClick={() => {}} />
-			<LoginButton key={1} text={getTranslation('login')} onClick={() => {}} />
+			<Toolbar />
 		</div>
 	)
 }

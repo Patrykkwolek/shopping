@@ -1,12 +1,16 @@
-$--schema-color-1: #fa7921; //#4a4063;
+$--schema-color-1: #4a4063;
 $--schema-color-2: white;
-$--schema-color-3: white; //#c8c6d7;
+$--schema-color-3: #c8c6d7;
 $--schema-color-4: #783f8e;
 $--schema-color-5: #4f1271;
 
 $--page-background-color: $--schema-color-1; //#309f5f;
 $--logo-background-color: $--schema-color-2; //#309f5f;
 $--font-main-color: $--schema-color-3; //#fff;
+
+$--login-button-color: $--schema-color-3;
+
+$--max-page-width: 1024px;
 
 * {
 	font-family: 'Raleway', sans-serif;
