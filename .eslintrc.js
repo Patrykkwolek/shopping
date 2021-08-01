@@ -25,6 +25,10 @@ module.exports = {
     'react/jsx-filename-extension': [
       1, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }
     ],
+    "react/require-default-props": [
+      "error",
+      { ignoreFunctionalComponents: true }
+    ],
     'import/extensions': 'off',
     'no-param-reassign': 'off',
     'no-use-before-define': 'off',

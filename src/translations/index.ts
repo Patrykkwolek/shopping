@@ -1,3 +1,5 @@
+import * as _ from 'lodash'
+
 interface Translation {
 	[key: string]: string
 }
@@ -23,7 +25,7 @@ const translations: TranslationRecords = Object.freeze({
 
 const getTranslation = (translation: string): string => {
 	const lang = 'eng'
-	return translations[translation][lang]
+	return _.get(translations, [translation, lang], '')
 }
 
 export default getTranslation
