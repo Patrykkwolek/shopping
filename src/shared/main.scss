@@ -4,8 +4,8 @@ $--schema-color-3: #c8c6d7;
 $--schema-color-4: #783f8e;
 $--schema-color-5: #4f1271;
 
-$--page-background-color: $--schema-color-1; //#309f5f;
-$--logo-background-color: $--schema-color-2; //#309f5f;
+$--page-background-color: $--schema-color-2;
+$--logo-background-color: $--schema-color-2;
 $--font-main-color: $--schema-color-2; //#fff;
 
 $--login-button-font-color: $--schema-color-1;
@@ -16,10 +16,4 @@ $--max-page-width: 1024px;
 
 * {
 	font-family: 'Raleway', sans-serif;
-}
-
-h2 {
-	font-size: 1.75rem;
-	font-weight: 600;
-	line-height: 1.3;
 }

@@ -29,6 +29,14 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'LOGIN',
 		pl: 'ZALOGUJ SIĘ',
 	},
+	singupHeader: {
+		eng: 'Start your',
+		pl: 'Rozpocznij swoje',
+	},
+	singupHeader2nd: {
+		eng: 'healthy life now',
+		pl: 'nowe życie',
+	},
 })
 
 const getTranslation = (translation: string): string => {
