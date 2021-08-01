@@ -1,23 +1,19 @@
 import React from 'react'
 import './toolbar.scss'
+import './loginButton.scss'
 import getTranslation from '../../translations'
-import LoginButton from './loginButton/loginButton'
+import LinkButton from '../linkButton/linkButton'
 
 function Toolbar() {
 	return (
 		<div className='toolbar'>
 			<div className='toolbar__button-group'>
-				<LoginButton
-					key={0}
-					isPrimary
-					text={getTranslation('signUp')}
-					onClick={() => {}}
-				/>
-				<LoginButton
-					key={1}
-					text={getTranslation('login')}
-					onClick={() => {}}
-				/>
+				<LinkButton to='/signup' className='login-button login-button--primary'>
+					{getTranslation('signUp')}
+				</LinkButton>
+				<LinkButton className='login-button' to='/login'>
+					{getTranslation('login')}
+				</LinkButton>
 			</div>
 		</div>
 	)

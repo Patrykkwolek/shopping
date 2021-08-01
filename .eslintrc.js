@@ -25,15 +25,17 @@ module.exports = {
     'react/jsx-filename-extension': [
       1, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }
     ],
-    "react/require-default-props": [
-      "error",
+    'react/require-default-props': [
+      'error',
       { ignoreFunctionalComponents: true }
     ],
+    'react/jsx-props-no-spreading': 'off',
     'import/extensions': 'off',
     'no-param-reassign': 'off',
     'no-use-before-define': 'off',
     'import/order': 'off',
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
   settings: {
     'import/resolver': {
