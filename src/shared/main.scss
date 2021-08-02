@@ -2,15 +2,21 @@ $--schema-color-1: #309f5f;
 $--schema-color-2: #fff;
 $--schema-color-3: #3cbb72;
 $--schema-color-4: #ff7f23;
-$--schema-color-5: #4f1271;
+$--schema-color-5: #000;
 
+// general
 $--page-background-color: $--schema-color-2;
 $--logo-background-color: $--schema-color-2;
 $--font-main-color: $--schema-color-2;
 
+// login buttons
 $--login-button-font-color: $--schema-color-2;
+$--login-button-font-color-2: $--schema-color-5;
 $--login-button-color: $--schema-color-3;
 $--login-button-primary-color: $--schema-color-4;
+
+// text inputs
+$--input-border-radius: 12px;
 
 $--max-page-width: 1024px;
 

@@ -3,6 +3,7 @@
 
 .signup-page {
 	max-width: $--max-page-width;
+	@include page-container;
 	@include flex-center-horizontal;
 	@include flex-center-vertical;
 
@@ -18,6 +19,13 @@
 
 	&__header {
 		@include header;
-		color: $--login-button-font-color;
+		color: $--login-button-font-color-2;
+		text-align: center;
+	}
+	&__description {
+		margin: 1rem;
+		@include regular-text;
+		color: $--login-button-font-color-2;
+		text-align: center;
 	}
 }

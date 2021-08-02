@@ -37,6 +37,10 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'healthy life now',
 		pl: 'nowe życie',
 	},
+	singupHeaderDescription: {
+		eng: 'Here are an app to help you to change your diet, exercise and lifestyle for the better — for good!',
+		pl: 'Here are five steps to change your diet, exercise and lifestyle for the better — for good!',
+	},
 })
 
 const getTranslation = (translation: string): string => {

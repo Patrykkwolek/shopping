@@ -1,6 +1,7 @@
 import React from 'react'
 import './signupPage.scss'
 import ViewLogo from '../../components/welcomeBox/viewLogo/viewLogo'
+import TextInput from '../../components/textInput/textInput'
 import getTranslation from '../../translations'
 
 function SignupPage() {
@@ -15,6 +16,12 @@ function SignupPage() {
 			<span className='signup-page__header'>
 				{getTranslation('singupHeader2nd')}
 			</span>
+			<span className='signup-page__description'>
+				{getTranslation('singupHeaderDescription')}
+			</span>
+			<TextInput text='dww' placeholder='dw' />
+			<TextInput text='dww' placeholder='dw' />
+			<TextInput text='dww' placeholder='dw' />
 		</div>
 	)
 }
