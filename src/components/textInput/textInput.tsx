@@ -5,13 +5,13 @@ import Email from '../../resources/img/email.svg'
 import Password from '../../resources/img/password.svg'
 
 type Props = {
-	text: string
+	text?: string
 	placeholder: string
 	icon?: 'user' | 'email' | 'password'
 }
 
 function TextInput(props: Props) {
-	const { text, icon, placeholder } = props
+	const { text = '', icon, placeholder } = props
 
 	let Icon
 	switch (icon) {

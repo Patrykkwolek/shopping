@@ -19,9 +19,9 @@ function SignupPage() {
 			<span className='signup-page__description'>
 				{getTranslation('singupHeaderDescription')}
 			</span>
-			<TextInput text='dww' placeholder='dw' icon='user' />
-			<TextInput text='dww' placeholder='dw' icon='email' />
-			<TextInput text='dww' placeholder='dw' icon='password' />
+			<TextInput placeholder='John Doe' icon='user' />
+			<TextInput placeholder='john.doe@gmail.com' icon='email' />
+			<TextInput placeholder='***' icon='password' />
 		</div>
 	)
 }
