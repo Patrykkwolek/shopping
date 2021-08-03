@@ -3,13 +3,28 @@
 
 .text-input-container {
 	width: 100%;
+	@include flex-center-vertical;
+	position: relative;
 
 	.text-input {
-		border: 1px solid #ececec;
+		border: 1px solid $--input-border-color;
 		height: 60px;
 		width: 100%;
 		margin-bottom: 12px;
 		border-radius: $--input-border-radius;
-		//padding: 15px 25px 15px 64px;
+		padding: 15px 25px 15px 64px;
+		box-sizing: border-box;
+
+		&:focus {
+			outline: none;
+			border: 1px solid $--input-border-active-color;
+		}
+	}
+
+	.media-input {
+		@include flex-center-vertical;
+		position: absolute;
+		top: 17px;
+		left: 25px;
 	}
 }

@@ -3,6 +3,7 @@ $--schema-color-2: #fff;
 $--schema-color-3: #3cbb72;
 $--schema-color-4: #ff7f23;
 $--schema-color-5: #000;
+$--schema-color-6: #ececec;
 
 // general
 $--page-background-color: $--schema-color-2;
@@ -16,6 +17,8 @@ $--login-button-color: $--schema-color-3;
 $--login-button-primary-color: $--schema-color-4;
 
 // text inputs
+$--input-border-color: $--schema-color-6;
+$--input-border-active-color: $--schema-color-1;
 $--input-border-radius: 12px;
 
 $--max-page-width: 1024px;
