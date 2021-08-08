@@ -29,15 +29,15 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'LOGIN',
 		pl: 'ZALOGUJ SIĘ',
 	},
-	singupHeader: {
+	signupHeader: {
 		eng: 'Start your',
 		pl: 'Rozpocznij swoje',
 	},
-	singupHeader2nd: {
+	signupHeader2nd: {
 		eng: 'healthy life now',
 		pl: 'nowe życie',
 	},
-	singupHeaderDescription: {
+	signupHeaderDescription: {
 		eng: 'Here are an app to help you to change your diet, exercise and lifestyle for the better — for good!',
 		pl: 'Here are five steps to change your diet, exercise and lifestyle for the better — for good!',
 	},
