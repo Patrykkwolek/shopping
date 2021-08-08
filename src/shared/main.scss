@@ -1,9 +1,12 @@
-$--schema-color-1: #309f5f;
-$--schema-color-2: #fff;
-$--schema-color-3: #3cbb72;
+$--schema-color-1: #845ec2; //#309f5f;
+$--schema-color-2: #fff; //#fff;
+$--schema-color-3: #ff6f91; //#3cbb72;
 $--schema-color-4: #ff7f23;
 $--schema-color-5: #000;
-$--schema-color-6: #ececec;
+
+$--schema-2-color-1: #ececec;
+$--schema-2-color-2: #e5e5e5;
+$--schema-2-color-3: #646464;
 
 // general
 $--page-background-color: $--schema-color-2;
@@ -13,11 +16,13 @@ $--font-main-color: $--schema-color-2;
 // login buttons
 $--login-button-font-color: $--schema-color-2;
 $--login-button-font-color-2: $--schema-color-5;
+$--login-button-font-color-3: $--schema-2-color-3;
 $--login-button-color: $--schema-color-3;
 $--login-button-primary-color: $--schema-color-4;
+$--login-button-secondary-color: $--schema-2-color-2;
 
 // text inputs
-$--input-border-color: $--schema-color-6;
+$--input-border-color: $--schema-2-color-1;
 $--input-border-active-color: $--schema-color-1;
 $--input-border-radius: 12px;
 

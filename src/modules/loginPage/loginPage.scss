@@ -2,9 +2,9 @@
 @import '../../shared/utils.scss';
 
 .login-page {
-	height: 100%;
+	@include page;
+	@include page-container;
 	display: flex;
 	flex-direction: column;
-	@include page-container;
 	background-color: $--schema-color-1;
 }

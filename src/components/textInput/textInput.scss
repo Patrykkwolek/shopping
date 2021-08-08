@@ -20,12 +20,23 @@
 			outline: none;
 			border: 1px solid $--input-border-active-color;
 		}
+
+		&--symmetric {
+			padding: 15px 64px 15px 64px;
+		}
 	}
 
 	.media-input {
 		@include flex-center-vertical;
 		position: absolute;
-		top: 17px;
-		left: 25px;
+
+		&__left-icon {
+			top: 17px;
+			left: 25px;
+		}
+		&__right-icon {
+			top: 17px;
+			right: 15px;
+		}
 	}
 }

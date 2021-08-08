@@ -24,12 +24,22 @@ function SignupPage() {
 			</div>
 			<div className='signup-page__inputs-group'>
 				<TextInput placeholder='John Doe' icon='user' />
-				<TextInput placeholder='john.doe@gmail.com' icon='email' />
-				<TextInput placeholder='***' icon='password' />
+				<TextInput placeholder='john.doe@gmail.com' icon='email' text='ef' />
+				<TextInput
+					placeholder='***'
+					icon='password'
+					secondaryIcon='showPassword'
+				/>
 			</div>
 			<div className='signup-page__button-group'>
-				<LinkButton to='/' className='login-button login-button'>
+				<LinkButton to='/' className='login-button'>
 					{getTranslation('signUp')}
+				</LinkButton>
+				<LinkButton
+					to='/login'
+					className='login-button login-button--secondary'
+				>
+					{getTranslation('login')}
 				</LinkButton>
 			</div>
 		</div>

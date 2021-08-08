@@ -16,4 +16,8 @@
 	&--primary {
 		background-color: $--login-button-primary-color;
 	}
+	&--secondary {
+		color: $--login-button-font-color-3;
+		background-color: $--login-button-secondary-color;
+	}
 }

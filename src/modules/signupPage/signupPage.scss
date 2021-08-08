@@ -2,8 +2,9 @@
 @import '../../shared/utils.scss';
 
 .signup-page {
-	max-width: $--max-page-width;
+	@include page;
 	@include page-container;
+	max-width: $--max-page-width;
 	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
@@ -33,6 +34,7 @@
 		}
 	}
 	&__inputs-group {
+		margin: 2rem 0;
 	}
 	&__button-group {
 		display: flex;
