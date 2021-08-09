@@ -3,6 +3,7 @@
 
 .main-page-content {
 	width: 100vw;
+	height: 100vh;
 	transition-property: transform;
 	transition-duration: 1s;
 	transform: translate3d(0px, 0px, 0px);
@@ -11,9 +12,11 @@
 	top: 0;
 	z-index: 200;
 	background-color: $--schema-color-2;
+	box-shadow: -10px 5px 30px 0 #ebf6f0;
 
 	&--swiped {
 		transform: translate3d($--main-menu-width, $--main-menu-top-swiped, 0px);
+		border-radius: 24px;
 	}
 
 	&__container {
