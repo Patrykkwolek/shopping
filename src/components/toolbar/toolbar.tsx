@@ -11,7 +11,7 @@ function Toolbar() {
 				<LinkButton to='/signup' className='login-button login-button--primary'>
 					{getTranslation('signUp')}
 				</LinkButton>
-				<LinkButton className='login-button' to='/login'>
+				<LinkButton className='login-button' to='/main'>
 					{getTranslation('login')}
 				</LinkButton>
 			</div>

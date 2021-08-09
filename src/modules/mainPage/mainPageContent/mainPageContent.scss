@@ -1,0 +1,23 @@
+@import '../../../shared/main.scss';
+@import '../../../shared/utils.scss';
+
+.main-page-content {
+	width: 100vw;
+	transition-property: transform;
+	transition-duration: 1s;
+	transform: translate3d(0px, 0px, 0px);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 200;
+	background-color: $--schema-color-2;
+
+	&--swiped {
+		transform: translate3d($--main-menu-width, $--main-menu-top-swiped, 0px);
+	}
+
+	&__container {
+		@include page;
+		@include page-container;
+	}
+}

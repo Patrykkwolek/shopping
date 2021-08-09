@@ -41,6 +41,14 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'Here are an app to help you to change your diet, exercise and lifestyle for the better — for good!',
 		pl: 'Here are five steps to change your diet, exercise and lifestyle for the better — for good!',
 	},
+	home: {
+		eng: 'Home',
+		pl: 'Menu',
+	},
+	mainMenu: {
+		eng: 'Main Menu',
+		pl: 'Menu Główne',
+	},
 })
 
 const getTranslation = (translation: string): string => {

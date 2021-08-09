@@ -1,0 +1,19 @@
+@import '../../../shared/main.scss';
+@import '../../../shared/utils.scss';
+
+.main-menu {
+	min-width: 150px;
+	max-width: 90%;
+	left: 0;
+	width: $--main-menu-width;
+	height: 100%;
+
+	&__header {
+		@include flex-center-horizontal;
+		@include flex-center-vertical;
+		height: 60px;
+		display: flex;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+}

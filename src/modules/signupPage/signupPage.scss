@@ -2,8 +2,8 @@
 @import '../../shared/utils.scss';
 
 .signup-page {
-	@include page;
 	@include page-container;
+	height: 100%;
 	max-width: $--max-page-width;
 	flex-direction: column;
 	margin-left: auto;
