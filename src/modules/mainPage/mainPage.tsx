@@ -3,18 +3,24 @@ import './mainPage.scss'
 import MainMenu from './mainMenu/mainMenu'
 import MainPageContent from './mainPageContent/mainPageContent'
 import getTranslation from '../../translations'
+import { animations } from './mainPageContent/constants'
 
 function MainPage() {
-	const [isMainMenuSwiped, setIsMainMenuSwiped] = useState(false)
+	const [menusAnimation, setMenuAnimation] = useState(animations.NotSet)
 	const handleOnMainMenuClick = useCallback(() => {
-		setIsMainMenuSwiped(!isMainMenuSwiped)
-	}, [setIsMainMenuSwiped, isMainMenuSwiped])
+		setMenuAnimation(
+			menusAnimation === animations.NotSet ||
+				menusAnimation === animations.Rollback
+				? animations.Rollout
+				: animations.Rollback
+		)
+	}, [setMenuAnimation, menusAnimation])
 
 	return (
 		<div className='main-page'>
 			<MainMenu title={getTranslation('mainMenu')} />
 			<MainPageContent
-				isSwiped={isMainMenuSwiped}
+				animation={menusAnimation}
 				onMainMenuClick={handleOnMainMenuClick}
 			/>
 		</div>

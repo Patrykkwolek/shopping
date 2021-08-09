@@ -3,21 +3,22 @@ import './mainPageContent.scss'
 import Header from './header/header'
 import getTranslation from '../../../translations'
 import classNames from 'classnames'
+import { animations, animationsTypes } from './constants'
 
 type Props = {
 	onMainMenuClick: () => void
-	isSwiped: boolean
+	animation: animationsTypes
 }
 
 function MainPageContent(props: Props) {
-	const { onMainMenuClick, isSwiped } = props
+	const { onMainMenuClick, animation } = props
 
 	return (
 		<div
-			className={classNames(
-				'main-page-content',
-				isSwiped ? 'main-page-content--swiped' : ''
-			)}
+			className={classNames('main-page-content', {
+				'main-page-content--rollout': animation === animations.Rollout,
+				'main-page-content--rollback': animation === animations.Rollback,
+			})}
 		>
 			<div className='main-page-content__container'>
 				<Header

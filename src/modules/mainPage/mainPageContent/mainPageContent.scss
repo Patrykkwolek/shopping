@@ -1,22 +1,52 @@
 @import '../../../shared/main.scss';
 @import '../../../shared/utils.scss';
 
+@keyframes rollout-animation {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to {
+		left: $--main-menu-width;
+		top: $--main-menu-top-swiped;
+	}
+}
+
+@keyframes rollback-animation {
+	from {
+		left: $--main-menu-width;
+		top: $--main-menu-top-swiped;
+	}
+	to {
+		left: 0;
+		top: 0;
+	}
+}
+
 .main-page-content {
 	width: 100vw;
 	height: 100vh;
-	transition-property: transform;
-	transition-duration: 1s;
-	transform: translate3d(0px, 0px, 0px);
+
 	position: absolute;
 	left: 0;
 	top: 0;
 	z-index: 200;
 	background-color: $--schema-color-2;
 	box-shadow: -10px 5px 30px 0 #ebf6f0;
+	border-radius: 24px;
 
-	&--swiped {
-		transform: translate3d($--main-menu-width, $--main-menu-top-swiped, 0px);
-		border-radius: 24px;
+	&--rollout,
+	&--rollback {
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+	}
+
+	&--rollout {
+		animation-name: rollout-animation;
+	}
+
+	&--rollback {
+		animation-name: rollback-animation;
 	}
 
 	&__container {
