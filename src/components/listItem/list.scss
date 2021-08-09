@@ -1,0 +1,33 @@
+@import '../../shared/main';
+@import '../../shared/utils';
+
+.list {
+	padding: 20px 20px 20px 0;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+}
+
+.list-item {
+	&__content {
+		@include flex-center-horizontal;
+		width: 100%;
+		padding: 15px 30px;
+		&--active {
+			background-color: #ebf6f0;
+			.list-item__text {
+				color: #309f5f;
+			}
+		}
+	}
+	&__icon {
+		margin-right: 1rem;
+	}
+	&__text {
+		color: $--font-main-menu-items-color;
+		font-size: 16px;
+	}
+}

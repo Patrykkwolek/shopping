@@ -1,5 +1,5 @@
-@import '../../../shared/main.scss';
-@import '../../../shared/utils.scss';
+@import '../../../../shared/main';
+@import '../../../../shared/utils';
 
 @keyframes rollout-animation {
 	from {
@@ -37,7 +37,7 @@
 
 	&--rollout,
 	&--rollback {
-		animation-duration: 2s;
+		animation-duration: 1s;
 		animation-fill-mode: forwards;
 	}
 

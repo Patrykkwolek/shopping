@@ -1,5 +1,5 @@
-@import '../../../../shared/main';
-@import '../../../../shared/utils';
+@import '../../../shared/main';
+@import '../../../shared/utils';
 
 .header {
 	@include flex-center-horizontal;

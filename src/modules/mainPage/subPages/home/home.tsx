@@ -1,16 +1,16 @@
 import React from 'react'
-import './mainPageContent.scss'
-import Header from './header/header'
-import getTranslation from '../../../translations'
+import './home.scss'
+import Header from '../../header/header'
+import getTranslation from '../../../../translations'
 import classNames from 'classnames'
-import { animations, animationsTypes } from './constants'
+import { animations, animationsTypes } from '../../constants'
 
 type Props = {
 	onMainMenuClick: () => void
 	animation: animationsTypes
 }
 
-function MainPageContent(props: Props) {
+function Home(props: Props) {
 	const { onMainMenuClick, animation } = props
 
 	return (
@@ -30,4 +30,4 @@ function MainPageContent(props: Props) {
 	)
 }
 
-export default MainPageContent
+export default Home

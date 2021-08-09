@@ -1,8 +1,8 @@
 import React from 'react'
 import './header.scss'
-import Menu from '../../../../resources/img/menu.svg'
-import Bell from '../../../../resources/img/bell.svg'
-import Magnify from '../../../../resources/img/magnify.svg'
+import Menu from '../../../resources/img/menu.svg'
+import Bell from '../../../resources/img/bell.svg'
+import Magnify from '../../../resources/img/magnify.svg'
 
 type Props = {
 	title: string

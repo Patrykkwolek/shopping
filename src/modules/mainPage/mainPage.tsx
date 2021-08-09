@@ -1,9 +1,11 @@
 import React, { useState, useCallback } from 'react'
 import './mainPage.scss'
-import MainMenu from './mainMenu/mainMenu'
-import MainPageContent from './mainPageContent/mainPageContent'
 import getTranslation from '../../translations'
-import { animations } from './mainPageContent/constants'
+import { animations } from './constants'
+import { Route } from 'react-router-dom'
+import classNames from 'classnames'
+import LeftMenu from './leftMenu/leftMenu'
+import Header from './header/header'
 
 function MainPage() {
 	const [menusAnimation, setMenuAnimation] = useState(animations.NotSet)
@@ -16,13 +18,35 @@ function MainPage() {
 		)
 	}, [setMenuAnimation, menusAnimation])
 
+	const handleOnMainMenuHide = useCallback(() => {
+		setMenuAnimation(animations.Rollback)
+	}, [setMenuAnimation, menusAnimation])
+
 	return (
 		<div className='main-page'>
-			<MainMenu title={getTranslation('mainMenu')} />
-			<MainPageContent
-				animation={menusAnimation}
-				onMainMenuClick={handleOnMainMenuClick}
+			<LeftMenu
+				title={getTranslation('mainMenu')}
+				onMainMenuHide={handleOnMainMenuHide}
 			/>
+			<div
+				className={classNames('main-page-content', {
+					'main-page-content--rollout': menusAnimation === animations.Rollout,
+					'main-page-content--rollback': menusAnimation === animations.Rollback,
+				})}
+			>
+				<div className='main-page-content__container'>
+					<Header
+						title={getTranslation('home')}
+						onMainMenuClick={handleOnMainMenuClick}
+					/>
+					<Route path='/main/a'>
+						<div>Home</div>
+					</Route>
+					<Route path='/main/orders'>
+						<div>Orders</div>
+					</Route>
+				</div>
+			</div>
 		</div>
 	)
 }

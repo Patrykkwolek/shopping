@@ -47,7 +47,11 @@ const translations: TranslationRecords = Object.freeze({
 	},
 	mainMenu: {
 		eng: 'Main Menu',
-		pl: 'Menu Główne',
+		pl: 'LeftMenu Główne',
+	},
+	myOrder: {
+		eng: 'My Order',
+		pl: 'Moje Zamówienia',
 	},
 })
 
