@@ -20,6 +20,9 @@
 		padding: 15px 30px;
 		&--active {
 			background-color: #ebf6f0;
+			svg path {
+				fill: #309f5f;
+			}
 			.list-item__text {
 				color: #309f5f;
 			}

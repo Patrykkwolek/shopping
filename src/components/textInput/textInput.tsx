@@ -1,9 +1,11 @@
 import React from 'react'
 import './textInput.scss'
-import User from '../../resources/img/user.svg'
-import Email from '../../resources/img/email.svg'
-import Password from '../../resources/img/password.svg'
-import ShowPassword from '../../resources/img/showPassword.svg'
+import {
+	UserIcon,
+	EmailIcon,
+	PasswordIcon,
+	ShowPasswordIcon,
+} from '../../resources/img/svgIcons'
 import classNames from 'classnames'
 
 type Props = {
@@ -13,38 +15,36 @@ type Props = {
 	secondaryIcon?: 'showPassword'
 }
 
-function TextInput(props: Props) {
-	const { text = '', icon, secondaryIcon, placeholder } = props
-
-	let Icon
+const getIcon = (icon: string) => {
 	switch (icon) {
 		case 'user':
-			Icon = User
-			break
+			return UserIcon
 		case 'email':
-			Icon = Email
-			break
+			return EmailIcon
 		case 'password':
-			Icon = Password
-			break
+			return PasswordIcon
 		default:
-			break
+			return null
 	}
+}
 
-	let SecondaryIcon
-	switch (secondaryIcon) {
+const getSecondaryIcon = (icon: string) => {
+	switch (icon) {
 		case 'showPassword':
-			SecondaryIcon = ShowPassword
-			break
+			return ShowPasswordIcon
 		default:
-			break
+			return null
 	}
+}
+
+function TextInput(props: Props) {
+	const { text = '', icon, secondaryIcon, placeholder } = props
 
 	return (
 		<div className='text-input-container'>
 			{icon && (
 				<div className='media-input media-input__left-icon'>
-					<img src={Icon} alt='' />
+					{getIcon(icon)}
 				</div>
 			)}
 			<input
@@ -58,7 +58,7 @@ function TextInput(props: Props) {
 			/>
 			{secondaryIcon && (
 				<div className='media-input media-input__right-icon'>
-					<img src={SecondaryIcon} alt='' />
+					{getSecondaryIcon(secondaryIcon)}
 				</div>
 			)}
 		</div>

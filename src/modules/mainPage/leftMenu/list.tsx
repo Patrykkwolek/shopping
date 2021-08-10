@@ -2,8 +2,7 @@ import React from 'react'
 import '../../../components/listItem/listItem.scss'
 import ListItem from '../../../components/listItem/listItem'
 import LinkButton from '../../../components/linkButton/linkButton'
-import Home from '../../../resources/img/home.svg'
-import Orders from '../../../resources/img/orders.svg'
+import { HomeIcon, OrderIcon } from '../../../resources/img/svgIcons'
 import getTranslation from '../../../translations'
 import classNames from 'classnames'
 import * as routes from '../../../routes'
@@ -29,7 +28,7 @@ function List(props: Props) {
 						})}
 						onClick={onMainMenuHide}
 					>
-						<img className='list-item__icon' src={Home} alt='' />
+						<HomeIcon className='list-item__icon' />
 						<span className='list-item__text'>{getTranslation('home')}</span>
 					</LinkButton>
 				</ListItem>
@@ -42,7 +41,7 @@ function List(props: Props) {
 						})}
 						onClick={onMainMenuHide}
 					>
-						<img className='list-item__icon' src={Orders} alt='' />
+						<OrderIcon className='list-item__icon' />
 						<span className='list-item__text'>{getTranslation('myOrder')}</span>
 					</LinkButton>
 				</ListItem>
