@@ -11,5 +11,6 @@ body {
 
 .root {
 	@include page;
+	overflow-x: hidden;
 	color: $--font-main-color;
 }

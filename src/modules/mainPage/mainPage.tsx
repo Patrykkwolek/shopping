@@ -39,7 +39,7 @@ function MainPage() {
 						title={getTranslation('home')}
 						onMainMenuClick={handleOnMainMenuClick}
 					/>
-					<Route path='/main/a'>
+					<Route path='/main/search'>
 						<div>Home</div>
 					</Route>
 					<Route path='/main/orders'>

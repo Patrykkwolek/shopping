@@ -1,5 +1,5 @@
 import React, { ReactChild } from 'react'
-import './list.scss'
+import './listItem.scss'
 
 type Props = {
 	children: ReactChild

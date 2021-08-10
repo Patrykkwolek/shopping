@@ -2,7 +2,6 @@ import React, { MouseEventHandler, ReactNode } from 'react'
 import { withRouter } from 'react-router-dom'
 import { RouteComponentProps } from 'react-router'
 import './linkButton.scss'
-import classNames from 'classnames'
 
 type Props = RouteComponentProps & {
 	to: string
@@ -12,12 +11,11 @@ type Props = RouteComponentProps & {
 }
 
 const LinkButton = (props: Props) => {
-	const { children, className = '', history, to, onClick, ...rest } = props
+	const { children, className = '', history, to, onClick } = props
 	return (
 		<button
 			type='button'
-			className={classNames('link-button', className)}
-			{...rest}
+			className={className || 'link-button'}
 			onClick={event => {
 				if (onClick) {
 					onClick(event)

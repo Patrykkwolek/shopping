@@ -1,10 +1,13 @@
 import React from 'react'
-import '../../../components/listItem/list.scss'
+import '../../../components/listItem/listItem.scss'
 import ListItem from '../../../components/listItem/listItem'
 import LinkButton from '../../../components/linkButton/linkButton'
 import Home from '../../../resources/img/home.svg'
 import Orders from '../../../resources/img/orders.svg'
 import getTranslation from '../../../translations'
+import classNames from 'classnames'
+import * as routes from '../../../routes'
+import { useLocation } from 'react-router-dom'
 
 type Props = {
 	onMainMenuHide: () => void
@@ -12,14 +15,18 @@ type Props = {
 
 function List(props: Props) {
 	const { onMainMenuHide } = props
+	const location = useLocation()
 
 	return (
 		<div className='list'>
 			<ul>
 				<ListItem>
 					<LinkButton
-						to='/main/a'
-						className='list-item__content list-item__content--active'
+						to={routes.searchPageUrl}
+						className={classNames('list-item__content', {
+							'list-item__content--active':
+								location.pathname === routes.searchPageUrl,
+						})}
 						onClick={onMainMenuHide}
 					>
 						<img className='list-item__icon' src={Home} alt='' />
@@ -28,8 +35,11 @@ function List(props: Props) {
 				</ListItem>
 				<ListItem>
 					<LinkButton
-						to='/main/orders'
-						className='list-item__content'
+						to={routes.ordersPageUrl}
+						className={classNames('list-item__content', {
+							'list-item__content--active':
+								location.pathname === routes.ordersPageUrl,
+						})}
 						onClick={onMainMenuHide}
 					>
 						<img className='list-item__icon' src={Orders} alt='' />

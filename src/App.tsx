@@ -4,21 +4,22 @@ import LoginPage from './modules/loginPage/loginPage'
 import SignupPage from './modules/signupPage/signupPage'
 import MainPage from './modules/mainPage/mainPage'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import * as routes from './routes'
 
 function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path='/'>
+				<Route exact path={routes.homePageUrl}>
 					<LoginPage />
 				</Route>
-				<Route path='/signup'>
+				<Route path={routes.signupPageUrl}>
 					<SignupPage />
 				</Route>
-				<Route path='/login'>
+				<Route path={routes.loginPageUrl}>
 					<div />
 				</Route>
-				<Route path='/main'>
+				<Route path={routes.mainPageUrl}>
 					<MainPage />
 				</Route>
 			</Switch>
