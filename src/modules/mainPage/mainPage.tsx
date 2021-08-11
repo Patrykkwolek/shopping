@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom'
 import classNames from 'classnames'
 import LeftMenu from './leftMenu/leftMenu'
 import Header from './header/header'
+import Home from './subPages/home/home'
 
 function MainPage() {
 	const [menusAnimation, setMenuAnimation] = useState(animations.NotSet)
@@ -40,7 +41,7 @@ function MainPage() {
 						onMainMenuClick={handleOnMainMenuClick}
 					/>
 					<Route path='/main/search'>
-						<div>Home</div>
+						<Home />
 					</Route>
 					<Route path='/main/orders'>
 						<div>Orders</div>

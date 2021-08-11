@@ -8,6 +8,13 @@
 	flex: 1 0;
 	padding: 1rem 0;
 
+	/*
+	 * Override swiper styles
+	 */
+	.swiper-container {
+		height: 100%;
+	}
+
 	&__content {
 		@include flex-center-vertical;
 		align-items: flex-end;
