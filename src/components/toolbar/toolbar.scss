@@ -3,10 +3,8 @@
 
 .toolbar {
 	max-width: $--max-page-width;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
 	flex: 0 0;
+	padding: 0 30px 0 30px;
 
 	&__button-group {
 		display: flex;

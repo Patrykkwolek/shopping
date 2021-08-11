@@ -1,17 +1,19 @@
 import React from 'react'
 import './slider.scss'
-import getTranslation from '../../translations'
+import SliderItem from './sliderItem/sliderItem'
 
-function Slider() {
-	return (
-		<div className='slider'>
-			<h2 className='slider-content'>
-				{getTranslation('sliderText')}
-				<br />
-				{getTranslation('sliderText2nd')}
-			</h2>
-		</div>
-	)
+type SliderItemType = typeof SliderItem
+
+type Props = {
+	children?:
+		| React.ReactElement<SliderItemType>
+		| React.ReactElement<SliderItemType>[]
+}
+
+function Slider(props: Props) {
+	const { children } = props
+
+	return <div className='slider'>{children}</div>
 }
 
 export default Slider

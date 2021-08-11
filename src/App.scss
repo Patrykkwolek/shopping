@@ -1,6 +1,10 @@
 @import './shared/main.scss';
 @import './shared/utils.scss';
 
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
 html,
 body {
 	@include page;
