@@ -21,8 +21,16 @@ function Overview() {
 						</h2>
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className='slider-item'>Slide 2</SwiperSlide>
-				<SwiperSlide className='slider-item'>Slide 3</SwiperSlide>
+				<SwiperSlide className='slider-item'>
+					<div className='overview__content'>
+						<h2>Fast and reliable</h2>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide className='slider-item'>
+					<div className='overview__content'>
+						<h2>Zero waste idea</h2>
+					</div>
+				</SwiperSlide>
 			</Swiper>
 		</div>
 	)
