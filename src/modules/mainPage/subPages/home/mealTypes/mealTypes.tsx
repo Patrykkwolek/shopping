@@ -10,17 +10,17 @@ function MealTypes() {
 		<Swiper spaceBetween={50}>
 			<SwiperSlide>
 				<div className='categories__content'>
-					<img src={breakfast} alt='' height={150} width='100%' />
+					<img src={breakfast} alt='' width='100%' />
 				</div>
 			</SwiperSlide>
 			<SwiperSlide>
 				<div className='categories__content'>
-					<img src={lunch} alt='' height={150} width='100%' />
+					<img src={lunch} alt='' width='100%' />
 				</div>
 			</SwiperSlide>
 			<SwiperSlide>
 				<div className='categories__content'>
-					<img src={dinner} alt='' height={150} width='100%' />
+					<img src={dinner} alt='' width='100%' />
 				</div>
 			</SwiperSlide>
 		</Swiper>
