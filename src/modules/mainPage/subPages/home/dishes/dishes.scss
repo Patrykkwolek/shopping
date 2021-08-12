@@ -9,6 +9,7 @@
 		}
 		&__items {
 			display: flex;
+			flex: 1 0;
 		}
 		&__time-item {
 			display: flex;
@@ -19,7 +20,7 @@
 		}
 	}
 
-	&:nth-child(2n) .dish {
+	.dish:nth-child(2n) {
 		margin-left: 0.5rem;
 	}
 }
