@@ -15,28 +15,6 @@ type Props = {
 	secondaryIcon?: 'showPassword'
 }
 
-const getIcon = (icon: string) => {
-	switch (icon) {
-		case 'user':
-			return UserIcon
-		case 'email':
-			return EmailIcon
-		case 'password':
-			return PasswordIcon
-		default:
-			return null
-	}
-}
-
-const getSecondaryIcon = (icon: string) => {
-	switch (icon) {
-		case 'showPassword':
-			return ShowPasswordIcon
-		default:
-			return null
-	}
-}
-
 function TextInput(props: Props) {
 	const { text = '', icon, secondaryIcon, placeholder } = props
 
@@ -44,7 +22,9 @@ function TextInput(props: Props) {
 		<div className='text-input-container'>
 			{icon && (
 				<div className='media-input media-input__left-icon'>
-					{getIcon(icon)}
+					{icon === 'user' && <UserIcon />}
+					{icon === 'email' && <EmailIcon />}
+					{icon === 'password' && <PasswordIcon />}
 				</div>
 			)}
 			<input
@@ -58,7 +38,7 @@ function TextInput(props: Props) {
 			/>
 			{secondaryIcon && (
 				<div className='media-input media-input__right-icon'>
-					{getSecondaryIcon(secondaryIcon)}
+					{secondaryIcon === 'showPassword' && <ShowPasswordIcon />}
 				</div>
 			)}
 		</div>

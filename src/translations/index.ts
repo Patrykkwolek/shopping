@@ -65,6 +65,10 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'Dishes',
 		pl: 'Dania',
 	},
+	findFoodHere: {
+		eng: 'Find your meal here...',
+		pl: 'Szukaj swojego dania...',
+	},
 })
 
 const getTranslation = (translation: string): string => {

@@ -1,0 +1,36 @@
+@import '../../shared/main';
+@import '../../shared/utils';
+
+.searchbar {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 1rem 0;
+
+	&__media {
+		left: 22px;
+		top: 17px;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		svg path {
+			fill: #bfbfbf;
+		}
+	}
+	&__input {
+		border: 1px solid #ececec;
+		height: 60px;
+		width: 100%;
+		margin-bottom: 12px;
+		border-radius: 12px;
+		padding: 15px 25px 15px 64px;
+		box-sizing: border-box;
+		font-size: 16px;
+		background-color: #f7f7f7;
+
+		&:focus-visible {
+			outline: none;
+		}
+	}
+}
