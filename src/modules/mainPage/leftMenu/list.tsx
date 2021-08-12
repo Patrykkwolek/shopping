@@ -13,11 +13,11 @@ import * as routes from '../../../routes'
 import { useLocation } from 'react-router-dom'
 
 type Props = {
-	onMainMenuHide: () => void
+	hideLeftMenu: () => void
 }
 
 function List(props: Props) {
-	const { onMainMenuHide } = props
+	const { hideLeftMenu } = props
 	const location = useLocation()
 
 	return (
@@ -30,7 +30,7 @@ function List(props: Props) {
 							'list-item__content--active':
 								location.pathname === routes.searchPageUrl,
 						})}
-						onClick={onMainMenuHide}
+						onClick={hideLeftMenu}
 					>
 						<HomeIcon className='list-item__icon' />
 						<span className='list-item__text'>{getTranslation('home')}</span>
@@ -43,7 +43,7 @@ function List(props: Props) {
 							'list-item__content--active':
 								location.pathname === routes.ordersPageUrl,
 						})}
-						onClick={onMainMenuHide}
+						onClick={hideLeftMenu}
 					>
 						<OrderIcon className='list-item__icon' />
 						<span className='list-item__text'>{getTranslation('myOrder')}</span>
@@ -56,7 +56,7 @@ function List(props: Props) {
 							'list-item__content--active':
 								location.pathname === routes.mainPageUrl,
 						})}
-						onClick={onMainMenuHide}
+						onClick={hideLeftMenu}
 					>
 						<LogoutIcon className='list-item__icon' />
 						<span className='list-item__text'>{getTranslation('logout')}</span>

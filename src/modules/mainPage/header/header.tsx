@@ -8,17 +8,17 @@ import {
 
 type Props = {
 	title: string
-	onMainMenuClick: () => void
+	onLeftMenuToggle: () => void
 }
 
 function Header(props: Props) {
-	const { title, onMainMenuClick } = props
+	const { title, onLeftMenuToggle } = props
 
 	return (
 		<div className='header'>
 			<div className='header__options'>
 				<button
-					onClick={onMainMenuClick}
+					onClick={onLeftMenuToggle}
 					type='button'
 					className='header__icon'
 				>

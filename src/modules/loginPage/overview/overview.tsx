@@ -11,8 +11,8 @@ SwiperCore.use([Pagination])
 function Overview() {
 	return (
 		<div className='overview'>
-			<Swiper className='slider' pagination>
-				<SwiperSlide className='slider-item'>
+			<Swiper pagination>
+				<SwiperSlide>
 					<div className='overview__content'>
 						<h2>
 							{getTranslation('sliderText')}
@@ -21,12 +21,12 @@ function Overview() {
 						</h2>
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className='slider-item'>
+				<SwiperSlide>
 					<div className='overview__content'>
 						<h2>Fast and reliable</h2>
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className='slider-item'>
+				<SwiperSlide>
 					<div className='overview__content'>
 						<h2>Zero waste idea</h2>
 					</div>
