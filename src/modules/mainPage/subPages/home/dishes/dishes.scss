@@ -4,6 +4,19 @@
 
 	.dish {
 		margin-bottom: 0.5rem;
+		&__name {
+			font-size: 0.8rem;
+		}
+		&__items {
+			display: flex;
+		}
+		&__time-item {
+			display: flex;
+			flex: 1 0;
+		}
+		&__price-item {
+			display: flex;
+		}
 	}
 
 	&:nth-child(2n) .dish {
