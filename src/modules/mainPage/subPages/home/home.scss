@@ -2,14 +2,19 @@
 @import '../../../../shared/utils';
 
 .home {
+	h5 {
+		font-size: 1.25rem;
+		font-weight: 500;
+		margin: 1rem 0;
+	}
+
 	.categories {
-		h5 {
-			font-size: 1.25rem;
-			font-weight: 500;
-			margin: 1rem 0;
-		}
 		&__content {
 			width: 100%;
+		}
+	}
+	.recommended {
+		&__content {
 		}
 	}
 }
