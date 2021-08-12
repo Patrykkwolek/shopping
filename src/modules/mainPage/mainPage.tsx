@@ -65,7 +65,10 @@ function MainPage() {
 					'main-page-content--rollback': menusAnimation === animations.Rollback,
 				})}
 			>
-				{/* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */}
+				{/*
+				 * For now we disable any key events since it's mobile only dedicated app
+				 * eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
+				 */}
 				<div
 					className='main-page-content__container'
 					onClickCapture={handleOnPageClick}
