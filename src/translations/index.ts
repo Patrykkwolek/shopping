@@ -61,13 +61,17 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'Meal types',
 		pl: 'Rodzaje dań',
 	},
+	promoMeals: {
+		eng: 'Promo',
+		pl: 'Promocyjne',
+	},
 	recommendedMeals: {
 		eng: 'Recommended',
 		pl: 'Polecane',
 	},
-	dishes: {
-		eng: 'Dishes',
-		pl: 'Dania',
+	all: {
+		eng: 'All',
+		pl: 'Wszystkie',
 	},
 	findFoodHere: {
 		eng: 'Find your meal here...',
