@@ -1,0 +1,12 @@
+.dishes {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	.dish {
+		margin-bottom: 0.5rem;
+	}
+
+	&:nth-child(2n) .dish {
+		margin-left: 0.5rem;
+	}
+}
