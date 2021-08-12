@@ -9,6 +9,7 @@ function Home() {
 			<div className='categories'>
 				<h5>{getTranslation('mealTypes')}</h5>
 				<MealTypes />
+				<h5>{getTranslation('dishes')}</h5>
 			</div>
 		</div>
 	)
