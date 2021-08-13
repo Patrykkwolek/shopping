@@ -15,7 +15,7 @@ type Props = {
 	imgName: string
 }
 
-function Dish(props: Props) {
+function Meal(props: Props) {
 	const { imgName } = props
 
 	let Image
@@ -89,15 +89,15 @@ function Dish(props: Props) {
 	}
 
 	return (
-		<div className='dish'>
+		<div className='meal'>
 			<img src={Image} alt='' className='' width='100%' />
-			<div className='dish__name'>{name}</div>
-			<div className='dish__items'>
-				<span className='dish__time-item'>{timeToPrepare}</span>
-				<span className='dish__price-item'>{price}</span>
+			<div className='meal__name'>{name}</div>
+			<div className='meal__items'>
+				<span className='meal__time-item'>{timeToPrepare}</span>
+				<span className='meal__price-item'>{price}</span>
 			</div>
 		</div>
 	)
 }
 
-export default Dish
+export default Meal

@@ -2,7 +2,7 @@ import React from 'react'
 import './home.scss'
 import MealTypes from './mealTypes/mealTypes'
 import MealsSlider from '../../../../components/mealsSlider/mealsSlider'
-import Dishes from './dishes/dishes'
+import Meals from './meals/meals'
 import Searchbar from '../../../../components/searchbar/searchbar'
 import getTranslation from '../../../../translations'
 
@@ -18,11 +18,14 @@ function Home() {
 				<h5>{getTranslation('mealTypes')}</h5>
 				<MealTypes />
 				<h5>{getTranslation('promoMeals')}</h5>
-				<MealsSlider mealsIDs={['img4', 'img2', 'img9']} />
+				<MealsSlider slidesPerView={3} mealsIDs={['img4', 'img2', 'img9']} />
 				<h5>{getTranslation('recommendedMeals')}</h5>
-				<MealsSlider mealsIDs={['img1', 'img2', 'img5', 'img8']} />
+				<MealsSlider
+					slidesPerView={3.2}
+					mealsIDs={['img1', 'img2', 'img5', 'img8']}
+				/>
 				<h5>{getTranslation('all')}</h5>
-				<Dishes />
+				<Meals />
 			</div>
 		</div>
 	)

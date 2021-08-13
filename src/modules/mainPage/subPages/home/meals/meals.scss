@@ -1,0 +1,26 @@
+.meal {
+	margin-bottom: 0.5rem;
+	&__name {
+		font-size: 0.8rem;
+	}
+	&__items {
+		display: flex;
+		flex: 1 0;
+	}
+	&__time-item {
+		display: flex;
+		flex: 1 0;
+	}
+	&__price-item {
+		display: flex;
+	}
+}
+
+.meals {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	.meal:nth-child(2n) {
+		margin-left: 0.5rem;
+	}
+}
