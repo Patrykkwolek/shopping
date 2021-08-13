@@ -8,7 +8,7 @@ function AllMeals() {
 	return (
 		<div className='meals'>
 			{_.map(mealsMockedData, meal => (
-				<Meal {...meal} />
+				<Meal key={meal.id} {...meal} />
 			))}
 		</div>
 	)

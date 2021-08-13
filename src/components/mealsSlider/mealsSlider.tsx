@@ -22,7 +22,7 @@ function MealsSlider(props: Props) {
 	return (
 		<Swiper spaceBetween={10} slidesPerView={slidesPerView}>
 			{_.map(meals, meal => (
-				<SwiperSlide>
+				<SwiperSlide key={`${SwiperSlide} - ${meal.id}`}>
 					<div className='recommended__content'>
 						<Meal {...meal} onShowDetails={onSelectMealPreview} />
 					</div>
