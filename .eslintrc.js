@@ -4,7 +4,7 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:react/mealsSlider',
+    'plugin:react/recommended',
     'airbnb',
     'prettier'
   ],

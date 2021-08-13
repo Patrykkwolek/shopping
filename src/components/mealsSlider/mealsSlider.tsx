@@ -2,7 +2,8 @@ import * as _ from 'lodash'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper.min.css'
-import Dish from '../meal/meal'
+import Meal from '../meal/meal'
+import type { MealType } from '../../models/meal/type'
 
 import SwiperCore, { Pagination } from 'swiper/core'
 
@@ -10,19 +11,20 @@ import SwiperCore, { Pagination } from 'swiper/core'
 SwiperCore.use([Pagination])
 
 type Props = {
-	mealsIDs: string[]
+	meals: MealType[]
 	slidesPerView: number
+	onSelectMealPreview?: (mealID: string) => void
 }
 
 function MealsSlider(props: Props) {
-	const { mealsIDs, slidesPerView } = props
+	const { meals, slidesPerView, onSelectMealPreview } = props
 
 	return (
 		<Swiper spaceBetween={10} slidesPerView={slidesPerView}>
-			{_.map(mealsIDs, mealID => (
+			{_.map(meals, meal => (
 				<SwiperSlide>
 					<div className='recommended__content'>
-						<Dish imgName={mealID} />
+						<Meal {...meal} onShowDetails={onSelectMealPreview} />
 					</div>
 				</SwiperSlide>
 			))}
