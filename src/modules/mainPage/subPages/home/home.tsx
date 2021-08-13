@@ -17,6 +17,8 @@ function Home() {
 				/>
 				<h5>{getTranslation('mealTypes')}</h5>
 				<MealTypes />
+				<h5>{getTranslation('justForYou')}</h5>
+				<MealsSlider slidesPerView={3} mealsIDs={['img7', 'img8', 'img10']} />
 				<h5>{getTranslation('promoMeals')}</h5>
 				<MealsSlider slidesPerView={3} mealsIDs={['img4', 'img2', 'img9']} />
 				<h5>{getTranslation('recommendedMeals')}</h5>

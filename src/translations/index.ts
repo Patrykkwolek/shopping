@@ -65,6 +65,10 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'Promo',
 		pl: 'Promocyjne',
 	},
+	justForYou: {
+		eng: 'Just for you..',
+		pl: 'Specjalnie dla Ciebie..',
+	},
 	recommendedMeals: {
 		eng: 'Recommended',
 		pl: 'Polecane',
