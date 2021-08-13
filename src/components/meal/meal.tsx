@@ -1,15 +1,16 @@
 import React from 'react'
+import './meal.scss'
 
-import img1 from '../../../../../../resources/img/tmp/1.png'
-import img2 from '../../../../../../resources/img/tmp/2.png'
-import img3 from '../../../../../../resources/img/tmp/3.png'
-import img4 from '../../../../../../resources/img/tmp/4.png'
-import img5 from '../../../../../../resources/img/tmp/5.png'
-import img6 from '../../../../../../resources/img/tmp/6.png'
-import img7 from '../../../../../../resources/img/tmp/7.png'
-import img8 from '../../../../../../resources/img/tmp/8.png'
-import img9 from '../../../../../../resources/img/tmp/9.png'
-import img10 from '../../../../../../resources/img/tmp/10.png'
+import img1 from '../../resources/img/tmp/1.png'
+import img2 from '../../resources/img/tmp/2.png'
+import img3 from '../../resources/img/tmp/3.png'
+import img4 from '../../resources/img/tmp/4.png'
+import img5 from '../../resources/img/tmp/5.png'
+import img6 from '../../resources/img/tmp/6.png'
+import img7 from '../../resources/img/tmp/7.png'
+import img8 from '../../resources/img/tmp/8.png'
+import img9 from '../../resources/img/tmp/9.png'
+import img10 from '../../resources/img/tmp/10.png'
 
 type Props = {
 	imgName: string

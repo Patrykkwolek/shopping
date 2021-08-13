@@ -47,7 +47,7 @@ const translations: TranslationRecords = Object.freeze({
 	},
 	mainMenu: {
 		eng: 'Main Menu',
-		pl: 'LeftMenu Główne',
+		pl: 'Menu Główne',
 	},
 	myOrder: {
 		eng: 'My Order',
@@ -69,6 +69,10 @@ const translations: TranslationRecords = Object.freeze({
 		eng: 'Recommended',
 		pl: 'Polecane',
 	},
+	mostWanted: {
+		eng: 'Most wanted',
+		pl: 'Najpopularniejsze',
+	},
 	all: {
 		eng: 'All',
 		pl: 'Wszystkie',
@@ -80,7 +84,7 @@ const translations: TranslationRecords = Object.freeze({
 })
 
 const getTranslation = (translation: string): string => {
-	const lang = 'eng'
+	const lang = 'pl'
 	return _.get(translations, [translation, lang], '')
 }
 

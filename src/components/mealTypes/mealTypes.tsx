@@ -1,9 +1,9 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper.min.css'
-import breakfast from '../../../../../resources/img/tmp/breakfast.png'
-import dinner from '../../../../../resources/img/tmp/dinner.png'
-import lunch from '../../../../../resources/img/tmp/lunch.png'
+import breakfast from '../../resources/img/tmp/breakfast.png'
+import dinner from '../../resources/img/tmp/dinner.png'
+import lunch from '../../resources/img/tmp/lunch.png'
 
 import SwiperCore, { Pagination } from 'swiper/core'
 

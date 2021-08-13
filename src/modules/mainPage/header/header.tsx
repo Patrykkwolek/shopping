@@ -1,10 +1,6 @@
 import React from 'react'
 import './header.scss'
-import {
-	BellIcon,
-	MagnifyIcon,
-	MenuIcon,
-} from '../../../resources/img/svgIcons'
+import { BellIcon, OrderIcon, MenuIcon } from '../../../resources/img/svgIcons'
 
 type Props = {
 	title: string
@@ -26,8 +22,8 @@ function Header(props: Props) {
 				</button>
 			</div>
 			<div className='header__title'>{title}</div>
-			<div className='header__options header__options--right-side'>
-				<MagnifyIcon className='header__right-icon header__right-icon--magnify' />
+			<div className='header__options header__options--right'>
+				<OrderIcon className='header__right-icon' />
 				<BellIcon className='header__right-icon' />
 			</div>
 		</div>

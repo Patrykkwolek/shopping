@@ -10,7 +10,7 @@
 	&__options {
 		display: flex;
 		width: 25%;
-		&--right-side {
+		&--right {
 			justify-content: flex-end;
 		}
 	}
@@ -25,8 +25,9 @@
 	}
 	&__right-icon {
 		margin-left: 1rem;
-		&--magnify {
-			height: 25px;
+		height: 28px;
+		path {
+			fill: #000000;
 		}
 	}
 }

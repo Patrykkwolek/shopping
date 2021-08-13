@@ -2,7 +2,7 @@ import * as _ from 'lodash'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper.min.css'
-import Dish from '../../modules/mainPage/subPages/home/meals/meal/meal'
+import Dish from '../meal/meal'
 
 import SwiperCore, { Pagination } from 'swiper/core'
 

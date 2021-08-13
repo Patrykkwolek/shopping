@@ -1,0 +1,8 @@
+.meals {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	.meal:nth-child(2n) {
+		margin-left: 0.5rem;
+	}
+}

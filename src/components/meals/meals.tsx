@@ -1,5 +1,5 @@
 import React from 'react'
-import Meal from './meal/meal'
+import Meal from '../meal/meal'
 import './meals.scss'
 
 function Meals() {
