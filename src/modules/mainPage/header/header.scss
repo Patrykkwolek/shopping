@@ -2,6 +2,7 @@
 @import '../../../shared/utils';
 
 .header {
+	@include page-container;
 	@include flex-center-horizontal;
 	justify-content: space-between;
 	height: 60px;

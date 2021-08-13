@@ -78,12 +78,14 @@ function MainPage() {
 						title={getTranslation('home')}
 						onLeftMenuToggle={handleOnLeftMenuToggle}
 					/>
-					<Route path='/main/search'>
-						<Home />
-					</Route>
-					<Route path='/main/orders'>
-						<div>Orders</div>
-					</Route>
+					<div className='main-page-content__body'>
+						<Route path='/main/search'>
+							<Home />
+						</Route>
+						<Route path='/main/orders'>
+							<div>Orders</div>
+						</Route>
+					</div>
 				</div>
 			</div>
 		</div>

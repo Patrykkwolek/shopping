@@ -51,7 +51,7 @@ const translations: TranslationRecords = Object.freeze({
 	},
 	myOrder: {
 		eng: 'My Order',
-		pl: 'Moje Zamówienia',
+		pl: 'Moje zamówienia',
 	},
 	logout: {
 		eng: 'Logout',
